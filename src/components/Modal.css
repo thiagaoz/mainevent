@@ -1,0 +1,83 @@
+:root{
+    --white-pink: #F9F1D8;
+    --sand:#FAEBB2;
+    --blood: #80241E;
+    --oldblood: #402F30;
+  
+}
+
+.btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
+    background: #402F30A0; /* Old Blood with transparency */
+}
+
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: var(--sand);
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+    border: solid 3px var(--blood);
+}
+
+.modal-label{
+    position: relative;
+    top: -20px;
+    font-weight: bolder;
+    font-size: x-large;
+}
+.button-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.checkout-list{
+    justify-content: center;
+    margin-top: 0px;
+    padding-bottom: 35px;
+}
+.ok-label{
+    background-color: #06971a;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.error-label{
+    background-color: #971006;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    margin: 10px;
+    padding: 3px 6px 3px;
+}
+
+.alert-label{
+    background-color: #fbff00;
+    color: black;
+    font-weight: bolder;
+    border: none;
+    border-radius: 50%;
+    margin: 10px;
+    padding: 3px 6px 3px;
+}

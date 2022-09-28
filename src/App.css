@@ -1,38 +1,105 @@
-.App {
+:root{
+  --white-pink: #F9F1D8;
+  --sand:#FAEBB2;
+  --blood: #80241E;
+  --oldblood: #402F30;
+
+}
+
+body {
+  background-color: #FAEBB2;
+  color: #80241E;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.button-long{
+  border-radius: 20px;
+  border: 2px solid #402F30;
+  padding: 10px 30px 10px;
+  width: max-content;
+  background-color: #80241E;
   color: white;
+  font-weight: bolder;
+  box-shadow: 0px 3px 8px #350f0c, inset 0px 2px 3px #ff8a82;
 }
 
-.App-link {
-  color: #61dafb;
+.button-small{
+  border-radius: 20px;
+  border: 2px solid #402F30;
+  padding: 5px 10px 5px;
+  width: max-content;
+  background-color: #80241E;
+  color: white;
+  font-weight: bolder;
+  box-shadow: 0px 1px 5px #350f0c, inset 0px 2px 3px #ff8a82;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-x-small{
+  border-radius: 10px;
+  border: 2px solid #402F30;
+  padding: 2px 9px 2px;
+  width: max-content;
+  background-color: #80241E;
+  color: white;
+  font-weight: bolder;
+  box-shadow: 0px 1px 5px #350f0c, inset 0px 2px 3px #ff8a82;
+}
+
+.btn-rounded{
+  border-radius: 5px;
+  border: 2px solid #402F30;
+  padding: 4px 20px 4px;
+  width: 200px;
+  background-color: #80241E;
+  color: white;
+  font-weight: bolder;
+  font-size: large;
+  box-shadow: 0px 1px 5px #350f0c, inset 0px 2px 3px #ff8a82;
+}
+
+.btn-rounded-small{
+  border-radius: 5px;
+  border: 2px solid #402F30;
+  padding: 4px 20px 4px;
+  width: fit-content;
+  background-color: #80241E;
+  color: white;
+  font-weight: bolder;
+  font-size: large;
+  box-shadow: 0px 1px 5px #350f0c, inset 0px 2px 3px #ff8a82;
+}
+
+.btn-equip-menu{
+  width: 500px;
+}
+
+
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active{
+  transform: translateY(2px);
+  background-color: var(--oldblood);
+}
+
+button:disabled{
+  cursor: not-allowed;
+  transform: translateY(0px);
+  background-color: var(--oldblood);
+}
+
+.no-click:hover{
+  cursor: context-menu;
+}
+
+.no-click:active{
+  background-color: #80241E;
+  transform: translateY(0px);
+  cursor: context-menu;
 }
