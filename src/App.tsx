@@ -7,7 +7,7 @@ import Fight from './components/Fight';
 function App() {
   return (
     <div className="App">
-    <BrowserRouter basename='https://thiagaoz.github.io/mainevent/'> 
+    <BrowserRouter > 
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='createchar' element={(<CreateChar />)}></Route>

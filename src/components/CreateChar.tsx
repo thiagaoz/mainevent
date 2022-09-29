@@ -83,7 +83,7 @@ const CreateChar = () => {
     //Check if points and equipment are OK before the fight
     const enterTheArena = () => {
         if (points === 0 && gold === 0 && armor !== items.empty && weapon !== items.empty && shield !== items.empty){
-            return navigate('/mainevent');
+            return navigate('/fight');
         }
         setConfirmWindow(!confirmWindow);
     }
