@@ -122,27 +122,35 @@ const CreateChar = () => {
                 </div>
                 <div className='atributes-values-container'>
                     <div className='atr-values'>
-                        <button type='button' className='minus-button atr-button button-x-small' onClick={() => minusButton(str,setStr)}> &#60; </button>
+                        <button type='button' className='minus-button atr-button button-x-small' 
+                            onClick={() => minusButton(str,setStr)} disabled={str<1}> &#60; </button>
                         <span className='atribute-value'>{str}</span>
-                        <button type='button' className='plus-button atr-button button-x-small' onClick={() => plusButton(str,setStr)}> &#62; </button>
+                        <button type='button' className='plus-button atr-button button-x-small' 
+                            onClick={() => plusButton(str,setStr)}disabled={str>4}> &#62; </button>
                         <br></br>
                     </div>
                     <div className='atr-values'>
-                        <button type='button' className='minus-button atr-button button-x-small' onClick={() => minusButton(agi,setAgi)}>&#60;</button>
+                        <button type='button' className='minus-button atr-button button-x-small' 
+                            onClick={() => minusButton(agi,setAgi)} disabled={agi<1}>&#60;</button>
                         <span className='atribute-value'>{agi}</span>
-                        <button type='button' className='plus-button atr-button button-x-small' onClick={() => plusButton(agi,setAgi)}> &#62; </button>
+                        <button type='button' className='plus-button atr-button button-x-small' 
+                            onClick={() => plusButton(agi,setAgi)} disabled={agi>4}> &#62; </button>
                         <br></br>
                     </div>
                     <div className='atr-values'>
-                        <button type='button' className='minus-button atr-button button-x-small' onClick={() => minusButton(dex,setDex)}> &#60; </button>
+                        <button type='button' className='minus-button atr-button button-x-small' 
+                            onClick={() => minusButton(dex,setDex)} disabled={dex<1}> &#60; </button>
                         <span className='atribute-value'>{dex}</span>
-                        <button type='button' className='plus-button atr-button button-x-small' onClick={() => plusButton(dex,setDex)}> &#62; </button>
+                        <button type='button' className='plus-button atr-button button-x-small' 
+                            onClick={() => plusButton(dex,setDex)} disabled={dex>4}> &#62; </button>
                         <br></br>
                     </div>
                     <div className='atr-values'>
-                        <button type='button' className='minus-button atr-button button-x-small' onClick={() => minusButton(con,setCon)}> &#60; </button>
+                        <button type='button' className='minus-button atr-button button-x-small' 
+                            onClick={() => minusButton(con,setCon)} disabled={con<1}> &#60; </button>
                         <span className='atribute-value'>{con}</span>
-                        <button type='button' className='plus-button atr-button button-x-small' onClick={() => plusButton(con,setCon)}> &#62; </button>
+                        <button type='button' className='plus-button atr-button button-x-small' 
+                            onClick={() => plusButton(con,setCon)} disabled={con>4}> &#62; </button>
                     </div>
                 </div>
             </div>

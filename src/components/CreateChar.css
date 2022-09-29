@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=MedievalSharp&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Charm&display=swap');
+
 :root{
   --white-pink: #F9F1D8;
   --sand:#FAEBB2;
   --blood: #80241E;
   --oldblood: #402F30;
 
+  --title-font: 'MedievalSharp', serif;
+  --cursive-font: 'Charm';
+  
 }
 
 body{
@@ -11,7 +17,7 @@ body{
 }
 
 .page-title{
-  margin-right:5%;
+  margin-right: 5%;
 }
 .level-container{
   position: relative;
@@ -44,20 +50,24 @@ body{
 .info-container{
   width: fit-content;
   padding: 1px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
+  font-family: var(--title-font);
 }
 
 
 .info-container .hidden-info{
   visibility: hidden;
-  width: 200px;
+  width: 250px;
   background-color: #402F30;
   color: #fff;
   text-align: center;
   border-radius: 3px;
   padding: 0px 0;
   margin-left: 10px;
+  font-family: var(--cursive-font);
+  font-weight: lighter;
+  font-size: large;
 
   position: absolute;
   z-index: 1;

@@ -1,19 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=MedievalSharp&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Charm&display=swap');
+
 :root{
   --white-pink: #F9F1D8;
   --sand:#FAEBB2;
   --blood: #80241E;
   --oldblood: #402F30;
 
+  --title-font: 'MedievalSharp', serif;
+  --cursive-font: 'Charm';
+  
 }
 
 body {
-  background-color: #FAEBB2;
+  background: rgb(250,235,178);
+  background: radial-gradient(circle, rgba(250,235,178,1) 68%, rgba(128,36,30,1) 100%);
+  background-attachment: fixed;
   color: #80241E;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
   text-align: center;
+}
+
+.page-title{
+  font-family: var(--title-font);
+}
+
+
+.main-event-text{
+  margin-left: 4%;
+}
+
+.intro-text{
+  font-family: var(--cursive-font);
+  font-size: 30px;
 }
 
 .button-long{
@@ -86,12 +108,16 @@ button:hover {
 button:active{
   transform: translateY(2px);
   background-color: var(--oldblood);
+  box-shadow: 0px 1px 5px #350f0c, inset 0px 2px 3px #251b1a;
 }
 
 button:disabled{
   cursor: not-allowed;
   transform: translateY(0px);
+  box-shadow: 0px 1px 5px #350f0c, inset 0px 2px 3px #251b1a;
   background-color: var(--oldblood);
+  color: #251b1a;
+  text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
 }
 
 .no-click:hover{

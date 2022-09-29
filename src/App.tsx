@@ -6,6 +6,7 @@ import MainEvent from './components/MainEvent';
 
 function App() {
   return (
+    <div className="App">
     <BrowserRouter> 
       <Routes>
         <Route path='/' element={<Home />}></Route>
@@ -13,6 +14,7 @@ function App() {
         <Route path='mainevent' element={<MainEvent/>}></Route>
       </Routes>
     </BrowserRouter>
+    </div>
   );
 }
 
